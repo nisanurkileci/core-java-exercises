@@ -1,20 +1,29 @@
 package car;
 
 public class Car {
-    String marka;
-    String model;
-    int yil;
+   private String brand;
+   private String model;
+   private int year;
 
+   public void setBrand(String a) {
+       brand = a;
+   }
+   public void setModel(String b) {
+       model = b;
+   }
+   public void setYear( int c) {
+       year = c;
+   }
 
-    public Car(String markaA, String modelA, int yilA) {
-        marka = markaA;
-        model = modelA;
-        yil = yilA;
-    }
+   public String getBrand() {
+       return brand;
+   }
 
-    public void arababilgileri() {
-        System.out.println("Marka: " + marka);
-        System.out.println("Model: " + model);
-        System.out.println("Yıl: " + yil);
-    }
+   public String getModel() {
+       return model;
+   }
+   public int getYear() {
+       return year;
+   }
+
 }
