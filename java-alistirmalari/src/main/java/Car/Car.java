@@ -2,7 +2,10 @@ package Car;
 
 public class Car extends Vehicle {
 
-
+    @Override
+    public void start() {
+        System.out.println("Car is starting with a roar!");
+    }
 
  /*   private String brand;
     private String model;
